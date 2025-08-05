@@ -9,7 +9,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor
 public class PaymentVerificationScheduler {
   private final VolaPaymentService volaService;
   private final PaymentRepository paymentRepo;

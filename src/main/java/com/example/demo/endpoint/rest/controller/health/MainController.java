@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import java.util.UUID;
 
 @Controller
-@RequiredArgsConstructor
 public class MainController {
     private final DonationRepository donationRepo;
     private final DonorRepository donorRepo;
@@ -45,11 +44,12 @@ public class MainController {
         Donor donor = donorRepo.findById(form.getDonorId())
                 .orElseThrow(() -> new IllegalArgumentException("Donateur invalide"));
 
-        Payment payment = new Payment();
-        payment.setPrice(form.getAmount());
-        payment.setPaymentStatus(PaymentStatus.VERIFYING);
-        payment.setPayementType(form.getPaymentType());
-        payment.setReference(UUID.randomUUID().toString());
+        Payment payment = new Payment(
+                form.getAmount(),
+                PaymentStatus.VERIFYING,
+                form.getPaymentType(),
+                UUID.randomUUID().toString()
+        );
 
         Donation donation = new Donation();
         donation.setDonor(donor);

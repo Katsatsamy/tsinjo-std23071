@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.example.demo.dto.PaymentResponse;
 import com.example.demo.model.Payment;
 import com.example.demo.model.PaymentStatus;
 import lombok.RequiredArgsConstructor;
@@ -8,7 +9,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 @Service
-@RequiredArgsConstructor
 public class VolaPaymentService {
   private final WebClient volaWebClient;
 

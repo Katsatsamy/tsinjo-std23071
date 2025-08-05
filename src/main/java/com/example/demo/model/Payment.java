@@ -19,6 +19,9 @@ public class Payment {
   @Enumerated(EnumType.STRING)
   private PaymentStatus paymentStatus;
 
+    public Payment(long amount, PaymentStatus paymentStatus, PaymentType paymentType, String string) {
+    }
+
     public String getReference() {
         return reference;
     }
