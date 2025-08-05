@@ -14,48 +14,48 @@ public class Payment {
   private long price;
 
   @Enumerated(EnumType.STRING)
-  private PayementType payementType;
+  private PaymentType payementType;
 
   @Enumerated(EnumType.STRING)
   private PaymentStatus paymentStatus;
 
-  public String getReference() {
-    return reference;
-  }
+    public String getReference() {
+        return reference;
+    }
 
-  public void setReference(String reference) {
-    this.reference = reference;
-  }
+    public void setReference(String reference) {
+        this.reference = reference;
+    }
 
-  public LocalDate getDate() {
-    return date;
-  }
+    public LocalDate getDate() {
+        return date;
+    }
 
-  public void setDate(LocalDate date) {
-    this.date = date;
-  }
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
 
-  public long getPrice() {
-    return price;
-  }
+    public long getPrice() {
+        return price;
+    }
 
-  public void setPrice(long price) {
-    this.price = price;
-  }
+    public void setPrice(long price) {
+        this.price = price;
+    }
 
-  public PayementType getPayementType() {
-    return payementType;
-  }
+    public PaymentType getPayementType() {
+        return payementType;
+    }
 
-  public void setPayementType(PayementType payementType) {
-    this.payementType = payementType;
-  }
+    public void setPayementType(PaymentType payementType) {
+        this.payementType = payementType;
+    }
 
-  public PaymentStatus getPaymentStatus() {
-    return paymentStatus;
-  }
+    public PaymentStatus getPaymentStatus() {
+        return paymentStatus;
+    }
 
-  public void setPaymentStatus(PaymentStatus paymentStatus) {
-    this.paymentStatus = paymentStatus;
-  }
+    public void setPaymentStatus(PaymentStatus paymentStatus) {
+        this.paymentStatus = paymentStatus;
+    }
 }

@@ -1,5 +1,5 @@
 package com.example.demo.model;
 
-public enum PayementType {
+public enum PaymentType {
   ORANGE_MONEY
 }
