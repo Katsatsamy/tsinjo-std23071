@@ -8,7 +8,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Help {
-    private Beneficiary beneficiary;
-    private Payment payment;
-    private String description;
+  private String id;
+  private Beneficiary beneficiary;
+  private Payment payment;
+  private String description;
 }

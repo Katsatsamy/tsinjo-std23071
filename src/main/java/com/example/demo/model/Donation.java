@@ -7,7 +7,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Donation{
-    private Donor donor;
-    private Payment payment;
+public class Donation {
+  private String id;
+  private Donor donor;
+  private Payment payment;
 }
