@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 public class Help {
     private Beneficiary beneficiary;
-    private Payement payement;
+    private Payment payment;
     private String description;
 }

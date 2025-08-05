@@ -9,5 +9,5 @@ import lombok.Setter;
 @Setter
 public class Donation{
     private Donor donor;
-    private Payement payement;
+    private Payment payment;
 }

@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @ToString
 @Getter
 @Setter
-public class Payement {
+public class Payment {
     private LocalDate date;
     private long price;
     private PayementType payementType;
